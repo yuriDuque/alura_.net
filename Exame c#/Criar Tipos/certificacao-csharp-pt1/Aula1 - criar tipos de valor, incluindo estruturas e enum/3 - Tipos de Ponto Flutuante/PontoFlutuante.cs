@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace certificacao_csharp_roteiro.antes
 {
@@ -39,10 +35,11 @@ namespace certificacao_csharp_roteiro.antes
             Console.WriteLine($"O resultado é do tipo: {resultado2.GetType()}"); // o resultado de uma soma de variaveis de tipos diferentes o c# sempre cria a nova variavel com o tipo de maior capacidade
 
             //===================================================================================
-            //=  C#            .NET                FAIXA DE VALORES             PRECISÃO        =
+            //=  C#             .NET                 FAIXA DE VALORES           PRECISÃO        =
             //===================================================================================
-            //=  float         System.Single       +-1.5e-45 à +-3.4e38          7      dígitos =
-            //=  double        System.Double       +-5.0e324 à +-1.7e308         15-16  dígitos =
+            //=  float          System.Single        -1.5e-45 à 3.4e38           7      dígitos =
+            //=  double         System.Double        -5.0e324 à 1.7e308          15-16  dígitos =
+            //=  decimal        System.Decimal       -7.9e28  à 7.9e28           28-29  dígitos = sempre que for somar valores decimais usar esse tipo
             //===================================================================================
         }
     }
